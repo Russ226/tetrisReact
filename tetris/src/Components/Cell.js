@@ -1,8 +1,10 @@
 import React from 'react';
+import {StyledCell} from './styles/StyledCell';
+import {TETROMINOS} from '../Tetrominos';
 
 const Cell = ({type}) => {
    return(
-    <div>{type}</div>
+    <StyledCell type={type} color={TETROMINOS[type].color}/>
     );
 
 }
